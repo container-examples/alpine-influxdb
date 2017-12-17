@@ -1,4 +1,4 @@
-# InfluxDB
+# InfluxDB [![Build Status](https://drone.aurelienperrier.com/api/badges/Docker-example/alpine-influxdb/status.svg?branch=master)](https://drone.aurelienperrier.com/Docker-example/alpine-influxdb)
 
 ## Versions
 
