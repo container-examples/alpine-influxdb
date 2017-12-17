@@ -11,6 +11,20 @@ pipeline:
       branch: master
       event: 
         - push
+        - pull
+  
+  publish_dev_alpine:
+    image: plugins/docker
+    repo: perriea/alpine-influxdb
+    dockerfile: Dockerfile
+    secrets: [ docker_username, docker_password ]
+    tag:
+      - dev
+    when:
+      branch: dev-alpine3.7
+      event: 
+        - push
+        - pull
 
   slack:
     image: plugins/slack
