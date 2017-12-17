@@ -6,7 +6,7 @@ pipeline:
     secrets: [ docker_username, docker_password ]
     tag:
       - latest
-      - "3.6"
+      - "3.7"
     when:
       branch: master
       event: 
