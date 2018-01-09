@@ -6,7 +6,7 @@ pipeline:
     secrets: [ docker_username, docker_password ]
     tag:
       - latest
-      - "3.7"
+      - "3.6"
     when:
       branch: master
       event: 
@@ -21,7 +21,10 @@ pipeline:
     tag:
       - dev
     when:
-      branch: dev-alpine3.7
+      branch:
+        - fix/*
+        - dev/*
+        - feature/*
       event: 
         - push
         - pull
