@@ -3,7 +3,7 @@ FROM alpine:3.7
 LABEL MAINTAINER="Aurelien PERRIER <perrie_a@etna-alternance.net>"
 LABEL APP="influxdb"
 LABEL APP_VERSION="1.4.2"
-LABEL APP_REPOSITORY="https://github.com/influxdata/influxdb/releases"
+LABEL APP_REPOSITORY="https://dl.influxdata.com/influxdb/releases/"
 
 ENV TIMEZONE Europe/Paris
 ENV INFLUXDB_VERSION 1.4.2
@@ -19,8 +19,7 @@ ADD https://dl.influxdata.com/influxdb/releases/influxdb-${INFLUXDB_VERSION}-sta
 RUN addgroup influxdb && \
         adduser -s /bin/false -G influxdb -S -D influxdb
 
-# Coping config & scripts
-COPY ./files/influxdb.conf /etc/influxdb/influxdb.conf
+# Coping scripts
 COPY ./scripts/start.sh start.sh
 
 # Installing binaries

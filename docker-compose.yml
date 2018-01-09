@@ -1,0 +1,34 @@
+version: '3.4'
+
+services:
+  influxdb:
+    image: perriea/alpine-influxdb:3.7
+    hostname: influxdb
+    command: -config /etc/influxdb/influxdb.conf
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 1
+        window: 120s
+      resources:
+        limits:
+          cpus: '25.000'
+          memory: 512M
+    volumes:
+      - influxdb_data:/var/lib/influxdb
+    configs:
+      - source: config_influxdb
+        target: /etc/influxdb/influxdb.conf
+    networks:
+      - internal_monitoring
+
+configs:
+  config_influxdb:
+    file: configs/influxdb.conf
+  
+volumes:
+  influxdb_data:
+
+networks:
+  internal_monitoring:
