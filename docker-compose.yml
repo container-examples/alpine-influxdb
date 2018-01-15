@@ -4,7 +4,7 @@ services:
   influxdb:
     image: perriea/alpine-influxdb:3.7
     hostname: influxdb
-    command: -config /etc/influxdb/influxdb.conf
+    # command: -config /etc/influxdb/influxdb.conf
     deploy:
       restart_policy:
         condition: on-failure
