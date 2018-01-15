@@ -2,9 +2,8 @@
 
 ## Versions
 
-Alpine : `3.6`   
+Alpine : `3.7`   
 InfluxDB : `1.4.2`   
-Gosu : `1.10`
 
 ## Commands
 
