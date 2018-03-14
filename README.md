@@ -3,7 +3,7 @@
 ## Versions
 
 Alpine : `3.7`   
-InfluxDB : `1.4.2`   
+InfluxDB : `1.5.0`   
 
 ## Commands
 
