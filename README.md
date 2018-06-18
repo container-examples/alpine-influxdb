@@ -1,4 +1,4 @@
-# InfluxDB 
+# InfluxDB [![Docker Repository on Quay](https://quay.io/repository/perriea/alpine-influxdb/status "Docker Repository on Quay")](https://quay.io/repository/perriea/alpine-influxdb)
 
 ## Versions
 
