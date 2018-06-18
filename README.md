@@ -1,9 +1,9 @@
-# InfluxDB [![Build Status](https://drone.aurelienperrier.com/api/badges/Docker-example/alpine-influxdb/status.svg?branch=master)](https://drone.aurelienperrier.com/Docker-example/alpine-influxdb)
+# InfluxDB 
 
 ## Versions
 
 Alpine : `3.7`   
-InfluxDB : `1.5.0`   
+InfluxDB : `1.5.3`   
 
 ## Commands
 
