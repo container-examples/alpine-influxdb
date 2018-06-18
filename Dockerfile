@@ -1,11 +1,11 @@
 FROM alpine:3.7
 
-LABEL MAINTAINER="Aurelien PERRIER <perrie_a@etna-alternance.net>"
+LABEL MAINTAINER="Aurelien PERRIER <a.perrier@gmail.com>"
 LABEL APP="influxdb"
 LABEL APP_REPOSITORY="https://dl.influxdata.com/influxdb/releases/"
 
 ENV TIMEZONE Europe/Paris
-ENV INFLUXDB_VERSION 1.5.0
+ENV INFLUXDB_VERSION 1.5.3
 
 # Installing packages
 RUN apk add --no-cache su-exec
